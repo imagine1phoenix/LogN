@@ -24,6 +24,9 @@ const PROFILE_URL_PATTERNS: Record<PlatformId, RegExp[]> = {
     /^(?:https?:\/\/)?auth\.geeksforgeeks\.org\/user\/([^/?#\s]+)/i,
   ],
   cses: [/^(?:https?:\/\/)?(?:www\.)?cses\.fi\/(?:problemset\/)?user\/([^/?#\s]+)/i],
+  cses: [
+    /^(?:https?:\/\/)?(?:www\.)?cses\.fi\/(?:problemset\/)?user\/([^/?#\s]+)/i,
+  ],
 };
 
 function extractHandle(platform: PlatformId, raw: string): string {
